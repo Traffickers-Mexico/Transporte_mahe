@@ -26,7 +26,11 @@
     padding: 24px;
     text-align: center;
     color: #fff;
-    background: linear-gradient(180deg, var(--bronze-dark) 0%, var(--bronze-mid) 35%, var(--bronze-highlight) 50%, var(--bronze-mid) 65%, var(--bronze-dark) 100%);
+    background-color: #0a0a0a;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.035) 0%, transparent 45%),
+      radial-gradient(circle at 80% 70%, rgba(255,255,255,0.03) 0%, transparent 45%),
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 4px);
   }
   .card {
     max-width: 560px;
@@ -48,22 +52,16 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #fff;
+    background: linear-gradient(90deg, var(--bronze-mid), var(--bronze-highlight));
     color: var(--bronze-dark);
     text-decoration: none;
     font-weight: 700;
     padding: 15px 30px;
     border-radius: 999px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
     transition: transform .15s ease;
   }
   .btn:hover { transform: translateY(-2px); }
-  .contact-note {
-    margin-top: 28px;
-    font-size: .9rem;
-    color: rgba(255,255,255,0.75);
-  }
-  .contact-note a { color: #fff; }
 </style>
 </head>
 <body>
@@ -74,7 +72,6 @@
     <a class="btn" href="https://wa.me/524461096696?text=He%20revisado%20su%20sitio%20web%20y%20quisiera%20ponerme%20en%20contacto%20con%20ustedes%20para%20tener%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios" target="_blank" rel="noopener">
       💬 Escríbenos por WhatsApp
     </a>
-    <p class="contact-note">O al correo <a href="mailto:contacto@transportemahe.com">contacto@transportemahe.com</a></p>
   </div>
 </body>
 </html>
