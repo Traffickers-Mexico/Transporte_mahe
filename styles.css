@@ -82,18 +82,11 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   gap: 20px;
 }
 .logo {
-  font-weight: 800;
-  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: var(--ink);
-  letter-spacing: .3px;
 }
-.logo span {
-  background: var(--gradient-brand-h);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
+.logo img { height: 40px; width: auto; }
 .nav {
   display: flex;
   gap: 28px;
@@ -281,6 +274,12 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   flex-wrap: wrap;
   font-size: .9rem;
 }
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-brand img { height: 32px; width: auto; }
 .footer-inner a { color: var(--bronze-highlight); text-decoration: none; }
 .footer-inner a:hover { text-decoration: underline; }
 
