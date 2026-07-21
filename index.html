@@ -3,152 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transporte MAHE | Transporte de Personal Empresarial en Querétaro</title>
-<meta name="description" content="Transporte MAHE ofrece transporte de personal empresarial en Querétaro: rutas turno-casa-turno, unidades monitoreadas y choferes capacitados para tu empresa.">
+<title>Transporte MAHE | Sitio en construcción</title>
+<meta name="description" content="El sitio de Transporte MAHE está en construcción. Contáctanos por WhatsApp para más información.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23c9884f%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 font-family=%22Arial%22 font-weight=%22bold%22 fill=%22%232e1c10%22 text-anchor=%22middle%22>M</text></svg>">
-<link rel="stylesheet" href="styles.css">
+<style>
+  :root {
+    --bronze-dark: #2e1c10;
+    --bronze-mid: #8a5a2e;
+    --bronze-light: #c9884f;
+    --bronze-highlight: #e3ab74;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(180deg, var(--bronze-dark) 0%, var(--bronze-mid) 35%, var(--bronze-highlight) 50%, var(--bronze-mid) 65%, var(--bronze-dark) 100%);
+  }
+  .card {
+    max-width: 560px;
+    width: 100%;
+  }
+  .logo { height: 64px; width: auto; margin-bottom: 28px; }
+  h1 {
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    margin: 0 0 14px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  }
+  p {
+    font-size: 1.05rem;
+    margin: 0 0 32px;
+    color: rgba(255,255,255,0.92);
+    line-height: 1.6;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: var(--bronze-dark);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 999px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    transition: transform .15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .contact-note {
+    margin-top: 28px;
+    font-size: .9rem;
+    color: rgba(255,255,255,0.75);
+  }
+  .contact-note a { color: #fff; }
+</style>
 </head>
 <body>
-
-<header class="site-header" id="inicio">
-  <div class="container header-inner">
-    <a class="logo" href="#inicio">
-      <img src="assets/img/logo/logo_mahe.svg" alt="Transporte MAHE" height="40">
+  <div class="card">
+    <img class="logo" src="assets/img/logo/logo_mahe_blanco.svg" alt="Transporte MAHE">
+    <h1>Estamos construyendo nuestro nuevo sitio web</h1>
+    <p>Muy pronto tendremos lista toda la información sobre nuestros servicios de transporte de personal empresarial en Querétaro. Mientras tanto, contáctanos directamente y con gusto te atendemos.</p>
+    <a class="btn" href="https://wa.me/524461096696?text=He%20revisado%20su%20sitio%20web%20y%20quisiera%20ponerme%20en%20contacto%20con%20ustedes%20para%20tener%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios" target="_blank" rel="noopener">
+      💬 Escríbenos por WhatsApp
     </a>
-    <nav class="nav" id="nav">
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <a class="btn btn-primary nav-cta" href="https://wa.me/524461096696" target="_blank" rel="noopener">Solicitar ruta</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    <p class="contact-note">O al correo <a href="mailto:contacto@transportemahe.com">contacto@transportemahe.com</a></p>
   </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="container hero-inner">
-      <p class="eyebrow">Transporte de personal empresarial · Querétaro</p>
-      <h1>Llevamos a tu equipo con puntualidad y seguridad, turno tras turno.</h1>
-      <p class="hero-sub">Diseñamos rutas de personal para empresas y plantas industriales en Querétaro, con unidades en buen estado y choferes capacitados que cuidan cada trayecto.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/524461096696" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
-        <a class="btn btn-outline" href="#servicios">Ver servicios</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat">
-        <span class="stat-number">100%</span>
-        <span class="stat-label">Rutas monitoreadas</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">24/7</span>
-        <span class="stat-label">Cobertura de turnos</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">QRO</span>
-        <span class="stat-label">Zona metropolitana de Querétaro</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="servicios">
-    <div class="container">
-      <h2>Nuestros servicios</h2>
-      <p class="section-sub">Soluciones de movilidad pensadas para la operación de tu empresa.</p>
-      <div class="cards">
-        <article class="card">
-          <div class="card-icon">🕑</div>
-          <h3>Rutas turno-casa-turno</h3>
-          <p>Traslados puntuales de ida y vuelta ajustados a los horarios y turnos de tu planta u oficina.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🏭</div>
-          <h3>Transporte para plantas industriales</h3>
-          <p>Rutas diseñadas para parques industriales y corporativos con múltiples puntos de recolección.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🛡️</div>
-          <h3>Unidades monitoreadas</h3>
-          <p>Flota en buen estado con seguimiento y choferes capacitados en seguridad y trato al personal.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">📍</div>
-          <h3>Cobertura en Querétaro</h3>
-          <p>Atendemos la zona metropolitana de Querétaro con rutas flexibles según la ubicación de tu personal.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section alt" id="nosotros">
-    <div class="container about-grid">
-      <div class="about-text">
-        <h2>Nosotros</h2>
-        <p>En Transporte MAHE nos dedicamos al transporte de personal empresarial en Querétaro. Trabajamos de la mano con empresas y plantas industriales para que su personal llegue a tiempo, seguro y en buenas condiciones a cada turno.</p>
-        <p>Nuestro compromiso es la puntualidad, el mantenimiento constante de nuestras unidades y la capacitación de nuestros operadores, para que la movilidad de tu equipo nunca sea un problema.</p>
-      </div>
-      <ul class="about-list">
-        <li>Puntualidad en cada turno</li>
-        <li>Choferes capacitados</li>
-        <li>Unidades en buen estado</li>
-        <li>Atención directa y personalizada</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section cta-band">
-    <div class="container cta-band-inner">
-      <h2>¿Necesitas transporte de personal para tu empresa?</h2>
-      <p>Cuéntanos tus turnos y ubicaciones, y te armamos una propuesta de ruta.</p>
-      <a class="btn btn-primary" href="https://wa.me/524461096696" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
-    </div>
-  </section>
-
-  <section class="section" id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p class="section-sub">Estamos en Querétaro, listos para atender a tu empresa.</p>
-      <div class="contact-grid">
-        <a class="contact-item" href="tel:+524461096696">
-          <span class="contact-icon">📞</span>
-          <div>
-            <span class="contact-label">Teléfono / WhatsApp</span>
-            <span class="contact-value">+52 446 109 66 96</span>
-          </div>
-        </a>
-        <a class="contact-item" href="mailto:contacto@transportemahe.com">
-          <span class="contact-icon">✉️</span>
-          <div>
-            <span class="contact-label">Correo</span>
-            <span class="contact-value">contacto@transportemahe.com</span>
-          </div>
-        </a>
-        <a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=Av.+Residencial+del+Parque+1041+Col+Residencial+del+Parque+Quer%C3%A9taro+76246" target="_blank" rel="noopener">
-          <span class="contact-icon">📍</span>
-          <div>
-            <span class="contact-label">Dirección</span>
-            <span class="contact-value">Av. Residencial del Parque 1041, Col. Residencial del Parque, C.P. 76246, Querétaro, Qro.</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <img src="assets/img/logo/logo_mahe_blanco.svg" alt="Transporte MAHE" height="32">
-      <span>© <span id="year"></span> Transporte MAHE. Todos los derechos reservados.</span>
-    </div>
-    <a href="https://wa.me/524461096696" target="_blank" rel="noopener">Contáctanos por WhatsApp</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
