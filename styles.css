@@ -98,8 +98,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .nav {
   display: flex;
   gap: 28px;
-  flex: 1;
-  justify-content: center;
+  margin-left: auto;
 }
 .nav a {
   color: #fff;
