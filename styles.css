@@ -59,10 +59,10 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 
 .btn-outline {
   border-color: var(--bronze-mid);
-  color: var(--bronze-dark);
+  color: #fff;
   background: transparent;
 }
-.btn-outline:hover { background: var(--surface-alt); }
+.btn-outline:hover { background: var(--surface-alt); color: var(--bronze-dark); }
 
 /* Header */
 .site-header {
