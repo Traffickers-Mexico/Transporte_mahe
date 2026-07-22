@@ -151,9 +151,9 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 140px 0 80px;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 140px clamp(20px, 4vw, 48px) 80px;
   background: var(--bronze-dark);
   overflow: hidden;
 }
@@ -169,16 +169,19 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(10,6,3,0.65) 0%, rgba(10,6,3,0.35) 45%, rgba(10,6,3,0.7) 100%);
+  background:
+    linear-gradient(90deg, rgba(10,6,3,0.75) 0%, rgba(10,6,3,0.4) 45%, rgba(10,6,3,0.15) 75%),
+    linear-gradient(180deg, rgba(10,6,3,0.55) 0%, rgba(10,6,3,0.25) 45%, rgba(10,6,3,0.65) 100%);
 }
 .hero-video .hero-inner {
   position: relative;
   z-index: 2;
-  margin: 0 auto;
+  max-width: 620px;
 }
 .hero-video .eyebrow { color: var(--bronze-highlight); }
 .hero-video h1 { color: #fff; text-shadow: 0 2px 16px rgba(0,0,0,0.4); }
-.hero-video .hero-sub { color: rgba(255,255,255,0.9); margin-left: auto; margin-right: auto; }
+.hero-video .hero-sub { color: rgba(255,255,255,0.9); }
+.hero-video .hero-actions { justify-content: flex-start; }
 
 /* Stats */
 .stats { padding: 44px 0; }
