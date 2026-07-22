@@ -38,6 +38,7 @@
         <a class="btn btn-whatsapp" href="https://wa.me/524461096696" target="_blank" rel="noopener">Contáctanos</a>
         <a class="btn btn-outline" href="#servicios">Ver servicios</a>
       </div>
+      <a class="hero-form-link" href="#cotizar">[ Cotizar Rutas para Mi Empresa ]</a>
     </div>
   </section>
 
@@ -103,11 +104,54 @@
     </div>
   </section>
 
-  <section class="section cta-band">
+  <section class="section cta-band" id="cotizar">
     <div class="container cta-band-inner">
       <h2>¿Necesitas transporte de personal para tu empresa?</h2>
       <p>Cuéntanos tus turnos y ubicaciones, y te armamos una propuesta de ruta.</p>
-      <a class="btn btn-primary" href="https://wa.me/524461096696" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+
+      <form id="quoteForm" class="quote-form" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="q-nombre">Nombre*</label>
+            <input id="q-nombre" name="nombre" type="text" required>
+          </div>
+          <div class="form-field">
+            <label for="q-empresa">Empresa*</label>
+            <input id="q-empresa" name="empresa" type="text" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="q-telefono">Teléfono / WhatsApp*</label>
+            <input id="q-telefono" name="telefono" type="tel" required>
+          </div>
+          <div class="form-field">
+            <label for="q-email">Correo*</label>
+            <input id="q-email" name="email" type="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="q-empleados">N.º de empleados a transportar</label>
+            <input id="q-empleados" name="empleados" type="text" placeholder="Ej. 40 personas">
+          </div>
+          <div class="form-field">
+            <label for="q-turnos">Turnos / horarios</label>
+            <input id="q-turnos" name="turnos" type="text" placeholder="Ej. Turno matutino 6am-2pm">
+          </div>
+        </div>
+        <div class="form-field form-field-full">
+          <label for="q-ubicaciones">Ubicaciones (origen / destino)</label>
+          <input id="q-ubicaciones" name="ubicaciones" type="text" placeholder="Ej. Zona Industrial Benito Juárez → El Marqués">
+        </div>
+        <div class="form-field form-field-full">
+          <label for="q-mensaje">Mensaje adicional</label>
+          <textarea id="q-mensaje" name="mensaje" rows="3"></textarea>
+        </div>
+        <p class="form-error hidden" id="formError"></p>
+        <p class="form-success hidden" id="formSuccess">¡Gracias! Recibimos tu solicitud, te contactaremos pronto.</p>
+        <button type="submit" class="btn btn-whatsapp" id="formSubmit">Enviar solicitud</button>
+      </form>
     </div>
   </section>
 
