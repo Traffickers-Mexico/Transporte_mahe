@@ -57,6 +57,13 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 }
 .btn-primary:hover { opacity: .92; }
 
+.btn-whatsapp {
+  background: #25D366;
+  color: #0a3d21;
+  box-shadow: var(--shadow);
+}
+.btn-whatsapp:hover { opacity: .92; }
+
 .btn-outline {
   border-color: var(--bronze-mid);
   color: #fff;
