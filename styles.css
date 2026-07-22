@@ -66,12 +66,20 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 
 /* Header */
 .site-header {
-  position: sticky;
+  position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
-  background: rgba(255,255,255,0.92);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease;
+}
+.site-header.scrolled {
+  position: fixed;
+  background: rgba(46, 28, 16, 0.92);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border);
+  border-bottom-color: rgba(255,255,255,0.08);
 }
 .header-inner {
   display: flex;
@@ -94,12 +102,12 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   justify-content: center;
 }
 .nav a {
-  color: var(--ink);
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   font-size: .95rem;
 }
-.nav a:hover { color: var(--bronze-mid); }
+.nav a:hover { color: var(--bronze-highlight); }
 .nav-cta { white-space: nowrap; padding: 10px 22px; }
 .nav-toggle {
   display: none;
@@ -107,7 +115,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   border: none;
   font-size: 1.4rem;
   cursor: pointer;
-  color: var(--ink);
+  color: #fff;
 }
 
 /* Hero */
@@ -137,6 +145,41 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   flex-wrap: wrap;
   margin-top: 28px;
 }
+
+/* Hero video */
+.hero-video {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 140px 0 80px;
+  background: var(--bronze-dark);
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(10,6,3,0.65) 0%, rgba(10,6,3,0.35) 45%, rgba(10,6,3,0.7) 100%);
+}
+.hero-video .hero-inner {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+.hero-video .eyebrow { color: var(--bronze-highlight); }
+.hero-video h1 { color: #fff; text-shadow: 0 2px 16px rgba(0,0,0,0.4); }
+.hero-video .hero-sub { color: rgba(255,255,255,0.9); margin-left: auto; margin-right: auto; }
 
 /* Stats */
 .stats { padding: 44px 0; }
@@ -302,6 +345,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
     padding: 20px 24px;
     border-bottom: 1px solid var(--border);
   }
+  .site-header.open .nav a { color: var(--ink); }
   .site-header.open .nav-cta {
     display: inline-block;
     margin: 0 24px 20px;

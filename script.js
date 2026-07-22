@@ -10,3 +10,9 @@ navToggle.addEventListener("click", () => {
 document.querySelectorAll(".nav a").forEach((link) => {
   link.addEventListener("click", () => header.classList.remove("open"));
 });
+
+const toggleScrolledHeader = () => {
+  header.classList.toggle("scrolled", window.scrollY > 40);
+};
+toggleScrolledHeader();
+window.addEventListener("scroll", toggleScrolledHeader);
