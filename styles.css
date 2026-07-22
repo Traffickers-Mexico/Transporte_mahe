@@ -187,7 +187,10 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   line-height: 1.4;
   letter-spacing: 0.2px;
 }
-.hero-video .hero-sub { color: rgba(255,255,255,0.9); }
+.hero-video .hero-sub { color: rgba(255,255,255,0.9); max-width: none; white-space: nowrap; }
+@media (max-width: 900px) {
+  .hero-video .hero-sub { white-space: normal; }
+}
 .hero-video .hero-actions { justify-content: flex-start; }
 
 /* Stats */
