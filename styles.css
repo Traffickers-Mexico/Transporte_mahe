@@ -85,8 +85,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px clamp(20px, 4vw, 48px);
   gap: 20px;
 }
 .logo {
