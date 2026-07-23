@@ -1,7 +1,7 @@
 // Cloudflare Pages Function — Formulario de cotización
 // Variables de entorno requeridas en Cloudflare Dashboard (Settings → Environment variables):
 //   BREVO_KEY_MAHE  → tu API key de Brevo para este proyecto
-//   NOTIFY_EMAIL    → transportemahe@gmail.com
+//   NOTIFY_EMAIL_MAHE    → transportemahe@gmail.com
 
 const CORS = {
     'Access-Control-Allow-Origin': '*',
@@ -39,7 +39,7 @@ export async function onRequest(context) {
 
     // ── 1. NOTIFICAR AL EQUIPO ────────────────────────────────────────────
     await enviarEmail(env, {
-        to: env.NOTIFY_EMAIL || 'transportemahe@gmail.com',
+        to: env.NOTIFY_EMAIL_MAHE || 'transportemahe@gmail.com',
         subject: `🚐 Nueva solicitud de cotización: ${empresa}`,
         html: `
             <div style="font-family:sans-serif;max-width:600px;margin:auto;">
