@@ -501,8 +501,8 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   margin-bottom: 12px;
 }
 .benefit-icon svg { width: 22px; height: 22px; }
-.benefit h3 { font-size: 1.05rem; margin-bottom: 8px; }
-.benefit p { margin: 0; font-size: .95rem; }
+.benefit h3 { font-size: 1.25rem; margin-bottom: 8px; }
+.benefit p { margin: 0; font-size: 1.1rem; line-height: 1.5; }
 
 @media (max-width: 640px) {
   .benefits-grid { grid-template-columns: 1fr; }
