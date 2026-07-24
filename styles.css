@@ -511,6 +511,61 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   .benefits-grid { grid-template-columns: 1fr; }
 }
 
+/* Why MAHE */
+.why-mahe {
+  background: linear-gradient(160deg, var(--bronze-dark) 0%, #1c1006 100%);
+  color: #fff;
+}
+.why-mahe-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--bronze-highlight);
+  margin: 0 0 10px;
+}
+.why-mahe h2 {
+  color: #fff;
+  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
+  margin: 0 0 36px;
+}
+.why-mahe-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 22px;
+}
+.why-mahe-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.why-mahe-check {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--gradient-brand-h);
+  color: #fff;
+  font-weight: 800;
+  font-size: .9rem;
+}
+.why-mahe-list h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0 0 6px;
+}
+.why-mahe-list p {
+  margin: 0;
+  color: rgba(255,255,255,0.75);
+  font-size: .98rem;
+  line-height: 1.5;
+}
+
 /* CTA band */
 .cta-band {
   background: var(--gradient-brand-h);
