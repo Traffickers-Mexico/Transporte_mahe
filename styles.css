@@ -374,11 +374,31 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   display: grid;
   gap: 14px;
 }
+.about-img-wrap {
+  position: relative;
+  isolation: isolate;
+}
+.about-img-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 20px -20px -20px 20px;
+  background: var(--gradient-brand-h);
+  border-radius: var(--radius);
+  z-index: 0;
+}
 .about-img {
+  position: relative;
+  z-index: 1;
+  display: block;
   width: 100%;
   height: auto;
   border-radius: var(--radius);
+  border: 6px solid var(--surface);
   box-shadow: var(--shadow);
+}
+
+@media (max-width: 640px) {
+  .about-img-wrap::before { inset: 12px -12px -12px 12px; }
 }
 .about-list li {
   background: var(--surface);
