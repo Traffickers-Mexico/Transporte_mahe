@@ -1001,17 +1001,12 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 /* Dev credit */
 .dev-credit {
   background: var(--surface);
-  padding: 14px 0;
+  padding: 18px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  font-size: .8rem;
-  font-weight: 800;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  color: var(--ink);
 }
+.dev-credit img { height: 22px; width: auto; }
 .dev-credit-sep {
   width: 1px;
   height: 14px;
@@ -1044,7 +1039,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 /* Floating WhatsApp button */
 .whatsapp-float {
   position: fixed;
-  left: 24px;
+  right: 24px;
   bottom: 24px;
   z-index: 100;
   display: inline-flex;
@@ -1074,7 +1069,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   100% { transform: scale(1.9); opacity: 0; }
 }
 @media (max-width: 640px) {
-  .whatsapp-float { left: 16px; bottom: 16px; width: 52px; height: 52px; }
+  .whatsapp-float { right: 16px; bottom: 16px; width: 52px; height: 52px; }
   .whatsapp-float svg { width: 26px; height: 26px; }
 }
 
