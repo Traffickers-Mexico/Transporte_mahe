@@ -538,7 +538,10 @@
 
   <div class="container footer-inner">
     <span>© <span id="year"></span> Transporte MAHE. Todos los derechos reservados.</span>
-    <a href="https://wa.me/524461096696" target="_blank" rel="noopener">Contáctanos por WhatsApp</a>
+    <div class="footer-links">
+      <button type="button" class="link-btn" id="privacyLink">Aviso de Privacidad</button>
+      <a href="https://wa.me/524461096696" target="_blank" rel="noopener">Contáctanos por WhatsApp</a>
+    </div>
   </div>
 </footer>
 
@@ -546,6 +549,26 @@
   <span>Desarrollado por:</span>
   <span class="dev-credit-sep" aria-hidden="true"></span>
   <a href="https://www.traffickersmexico.com" target="_blank" rel="noopener">Traffickers México</a>
+</div>
+
+<a class="whatsapp-float" href="https://wa.me/524461096696?text=Estoy%20viendo%20su%20sitio%20web%20y%20quisiera%20charlar%20con%20un%20asesor" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <span class="whatsapp-float-ring"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.1.2-.3.2-.6.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4C10 9.5 9.5 8.3 9.3 7.8c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<div class="modal-overlay" id="privacyModal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <button type="button" class="modal-close" id="privacyClose" aria-label="Cerrar">&times;</button>
+    <h2 id="privacyTitle">Aviso de Privacidad</h2>
+    <div class="modal-body">
+      <p><strong>Transporte MAHE</strong>, con domicilio en Av. Residencial del Parque 1041, Col. Residencial del Parque, C.P. 76246, Querétaro, Qro., es responsable del uso y protección de tus datos personales conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+      <p><strong>Datos que recabamos:</strong> nombre, empresa, teléfono, correo electrónico, ubicaciones/rutas, horarios y demás información que nos proporciones a través de nuestro formulario de cotización o vía WhatsApp/correo.</p>
+      <p><strong>Finalidad:</strong> utilizamos tus datos para cotizar y prestar servicios de transporte de personal, dar seguimiento a tu solicitud y, en su caso, contactarte con fines comerciales relacionados con nuestros servicios.</p>
+      <p><strong>Transferencia de datos:</strong> no compartimos tu información con terceros, salvo que sea requerido por una autoridad competente.</p>
+      <p><strong>Derechos ARCO:</strong> puedes acceder, rectificar, cancelar u oponerte al uso de tus datos personales enviando tu solicitud al correo <a href="mailto:contacto@transportemahe.com">contacto@transportemahe.com</a>.</p>
+      <p><strong>Cambios al aviso:</strong> cualquier modificación a este aviso de privacidad será publicada en esta misma página.</p>
+    </div>
+  </div>
 </div>
 
 <script src="script.js"></script>

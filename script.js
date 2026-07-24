@@ -68,3 +68,27 @@ if (quoteForm) {
     }
   });
 }
+
+const privacyLink = document.getElementById("privacyLink");
+const privacyModal = document.getElementById("privacyModal");
+const privacyClose = document.getElementById("privacyClose");
+
+if (privacyLink && privacyModal) {
+  const openModal = () => {
+    privacyModal.hidden = false;
+    document.body.style.overflow = "hidden";
+  };
+  const closeModal = () => {
+    privacyModal.hidden = true;
+    document.body.style.overflow = "";
+  };
+
+  privacyLink.addEventListener("click", openModal);
+  privacyClose.addEventListener("click", closeModal);
+  privacyModal.addEventListener("click", (e) => {
+    if (e.target === privacyModal) closeModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !privacyModal.hidden) closeModal();
+  });
+}
