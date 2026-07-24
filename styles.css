@@ -301,7 +301,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 #beneficios {
   background-image:
     linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
-    url("assets/img/galeria/fondo_transportedepersonal.svg");
+    url("assets/img/galeria/fondo_transportedepersonal.webp");
   background-size: cover;
   background-position: center;
 }
