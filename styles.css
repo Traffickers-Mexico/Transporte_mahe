@@ -276,6 +276,11 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .card p { margin: 0; font-size: .95rem; }
 
 /* Offer grid ("Lo que ofrecemos") */
+#servicios {
+  background-image: url("assets/img/galeria/fondo_2_blanco_condisenotransparente.webp");
+  background-size: cover;
+  background-position: center;
+}
 #servicios h2 { margin-bottom: 20px; }
 .offer-quote {
   margin: 0 0 40px;
