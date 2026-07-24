@@ -569,6 +569,80 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   line-height: 1.5;
 }
 
+/* Compare table + zones */
+.compare h2 { text-align: center; }
+.compare-sub {
+  max-width: 680px;
+  margin: -8px auto 40px;
+  text-align: center;
+}
+.compare-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 72px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+.compare-table th {
+  background: var(--gradient-brand-h);
+  color: #fff;
+  text-align: left;
+  padding: 16px 20px;
+  font-size: .95rem;
+}
+.compare-table th:first-child { background: var(--ink); }
+.compare-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: .95rem;
+  vertical-align: top;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-feature { font-weight: 700; background: var(--surface-alt); }
+.compare-no { color: var(--ink-soft); }
+.compare-no::before { content: "✕ "; color: #c0392b; font-weight: 800; }
+.compare-yes { background: #f3f9f4; color: var(--ink); font-weight: 500; }
+.compare-yes::before { content: "✓ "; color: #2e8b57; font-weight: 800; }
+
+.compare-zones-title { text-align: center; margin-top: 0; }
+.zones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.zone {
+  background: var(--surface-alt);
+  border-left: 4px solid var(--bronze-mid);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 22px 24px;
+}
+.zone h3 { font-size: 1.05rem; margin: 0 0 14px; }
+.zone ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.zone li {
+  position: relative;
+  padding-left: 18px;
+  font-size: .92rem;
+  color: var(--ink-soft);
+}
+.zone li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--bronze-mid);
+}
+
+@media (max-width: 720px) {
+  .zones-grid { grid-template-columns: 1fr; }
+}
+
 /* FAQ */
 .faq h2 {
   text-align: center;
