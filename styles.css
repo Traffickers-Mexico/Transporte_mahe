@@ -277,11 +277,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 
 /* Offer grid ("Lo que ofrecemos") */
 #servicios {
-  background-image:
-    linear-gradient(rgba(201, 136, 79, 0.16), rgba(201, 136, 79, 0.16)),
-    url("assets/img/galeria/fondo_2_blanco_condisenotransparente.webp");
-  background-size: cover;
-  background-position: center;
+  background: var(--surface);
 }
 #servicios h2 { margin-bottom: 20px; }
 .offer-quote {
