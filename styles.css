@@ -300,14 +300,21 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 /* Benefits */
 #beneficios {
   background-image:
-    linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)),
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
     url("assets/img/galeria/fondo_transportedepersonal.webp");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 #beneficios h2 {
-  max-width: 640px;
-  margin-bottom: 40px;
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+}
+
+@media (max-width: 900px) {
+  #beneficios { background-attachment: scroll; }
 }
 .benefits-grid {
   display: grid;
