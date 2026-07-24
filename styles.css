@@ -245,6 +245,15 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 }
 .stat-label { color: var(--ink-soft); font-size: .95rem; }
 
+.beneficios-stats {
+  margin-top: 48px;
+}
+.beneficios-stats .stat {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(4px);
+  border-color: rgba(255,255,255,0.6);
+}
+
 /* Sections */
 .section { padding: 76px 0; }
 .section.alt { background: var(--surface-alt); }
