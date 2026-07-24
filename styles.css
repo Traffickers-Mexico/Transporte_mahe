@@ -277,7 +277,10 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 
 /* Offer grid ("Lo que ofrecemos") */
 #servicios {
-  background: var(--surface);
+  background-color: var(--surface);
+  background-image: url("assets/img/galeria/patron_rutas.svg");
+  background-repeat: repeat;
+  background-size: 420px 420px;
 }
 #servicios h2 { margin-bottom: 20px; }
 .offer-quote {

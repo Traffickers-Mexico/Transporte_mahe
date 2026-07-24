@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+  <g fill="none" stroke="#c9884f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.18">
+    <!-- winding dashed route -->
+    <path d="M10 60 C 60 20, 100 100, 150 60 S 240 20, 280 70" stroke-dasharray="6 8"/>
+    <!-- location pin -->
+    <path d="M330 40 c 0 22 -18 26 -18 46 0 12 8 20 18 20 s 18 -8 18 -20 c 0 -20 -18 -24 -18 -46 z"/>
+    <circle cx="330" cy="66" r="6"/>
+    <!-- simple van silhouette -->
+    <path d="M60 190 h90 a10 10 0 0 1 10 10 v22 h-110 v-22 a10 10 0 0 1 10 -10 z"/>
+    <path d="M60 190 v-14 h48 l18 14"/>
+    <circle cx="78" cy="224" r="7"/>
+    <circle cx="140" cy="224" r="7"/>
+    <!-- direction arrow -->
+    <path d="M250 200 h60 M290 186 l20 14 -20 14"/>
+    <!-- winding dashed route 2 -->
+    <path d="M360 150 C 400 190, 440 130, 480 170" stroke-dasharray="6 8"/>
+    <!-- compass -->
+    <circle cx="420" cy="300" r="26"/>
+    <path d="M420 280 l8 20 -8 8 -8 -8 z"/>
+    <!-- dotted road -->
+    <path d="M20 330 h420" stroke-dasharray="2 14"/>
+    <!-- location pin 2 -->
+    <path d="M150 360 c 0 20 -16 24 -16 42 0 11 7 18 16 18 s 16 -7 16 -18 c 0 -18 -16 -22 -16 -42 z"/>
+    <circle cx="150" cy="384" r="5"/>
+    <!-- winding route 3 -->
+    <path d="M220 420 C 260 380, 300 460, 340 420 S 420 380, 460 430" stroke-dasharray="6 8"/>
+  </g>
+</svg>
