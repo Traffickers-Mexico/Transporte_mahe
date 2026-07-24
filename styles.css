@@ -297,6 +297,35 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   font-weight: 800;
 }
 
+/* Benefits */
+#beneficios h2 {
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 48px;
+}
+.benefit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--surface-alt);
+  color: var(--bronze-mid);
+  margin-bottom: 12px;
+}
+.benefit-icon svg { width: 22px; height: 22px; }
+.benefit h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.benefit p { margin: 0; font-size: .95rem; }
+
+@media (max-width: 640px) {
+  .benefits-grid { grid-template-columns: 1fr; }
+}
+
 /* CTA band */
 .cta-band {
   background: var(--gradient-brand-h);
