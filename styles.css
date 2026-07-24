@@ -275,6 +275,50 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .card h3 { font-size: 1.1rem; margin-bottom: 10px; }
 .card p { margin: 0; font-size: .95rem; }
 
+/* Offer grid ("Lo que ofrecemos") */
+#servicios h2 { margin-bottom: 40px; }
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px 48px;
+}
+.offer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--surface-alt);
+  color: var(--bronze-mid);
+  margin-bottom: 10px;
+}
+.offer-icon svg { width: 20px; height: 20px; }
+.offer h3 { font-size: 1.05rem; margin-bottom: 10px; }
+.offer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.offer ul li {
+  position: relative;
+  padding-left: 16px;
+  font-size: .93rem;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+.offer ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--bronze-mid);
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .offer-grid { grid-template-columns: 1fr; }
+}
+
 /* About */
 .about-grid {
   display: grid;
