@@ -891,14 +891,13 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .contact-card h3 { font-size: 1.05rem; margin: 0 0 8px; }
 .contact-card p { font-size: .9rem; margin: 0 0 16px; }
 .contact-card a {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   color: var(--bronze-mid);
   font-weight: 700;
   text-decoration: none;
-  font-size: .85rem;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  font-size: .78rem;
+  white-space: nowrap;
 }
 .contact-card a:hover { text-decoration: underline; }
 
