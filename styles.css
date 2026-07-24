@@ -300,6 +300,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   gap: 36px 48px;
 }
 .offer-grid + .offer-grid { margin-top: 36px; }
+.offer-grid-empty { min-height: 220px; }
 .offer-icon {
   display: inline-flex;
   align-items: center;
