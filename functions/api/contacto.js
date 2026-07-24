@@ -1,4 +1,8 @@
 // Cloudflare Pages Function — Formulario de cotización
+// NOTA: el logo del correo apunta al dominio de preview (pages.dev) porque
+// el sitio real aún no está publicado en transportemahe.com. Cuando se
+// fusione sitio-completo -> main, cambiar la URL del <img> a
+// https://transportemahe.com/assets/img/logo/logo_mahe_horizontal_blanco.png
 // Variables de entorno requeridas en Cloudflare Dashboard (Settings → Environment variables):
 //   BREVO_KEY_MAHE  → tu API key de Brevo para este proyecto
 //   NOTIFY_EMAIL_MAHE    → transportemahe@gmail.com
@@ -67,7 +71,7 @@ export async function onRequest(context) {
         html: `
             <div style="font-family:sans-serif;max-width:600px;margin:auto;">
                 <div style="background:linear-gradient(135deg,#2e1c10,#8a5a2e);border-radius:12px 12px 0 0;padding:24px 32px;text-align:center;">
-                    <img src="https://transportemahe.com/assets/img/logo/logo_mahe_horizontal_blanco.png" alt="Transporte MAHE" style="height:44px;width:auto;display:block;margin:0 auto;">
+                    <img src="https://sitio-completo.transporte-mahe.pages.dev/assets/img/logo/logo_mahe_horizontal_blanco.png" alt="Transporte MAHE" style="height:44px;width:auto;display:block;margin:0 auto;">
                 </div>
                 <div style="background:#fff;border-radius:0 0 12px 12px;border:1px solid #e2e8f0;border-top:none;padding:32px;">
                 <h2 style="color:#8a5a2e;">¡Hola, ${nombreCorto}!</h2>
