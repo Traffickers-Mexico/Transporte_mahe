@@ -710,14 +710,49 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   background-size: cover;
   background-position: center;
   color: #fff;
-  text-align: center;
 }
 .cta-band h2, .cta-band p { color: #fff; }
-.cta-band-inner { max-width: 720px; margin: 0 auto; }
 .cta-band .btn-primary {
   background: #fff;
   color: var(--bronze-dark);
   box-shadow: none;
+}
+.cta-band-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+  text-align: left;
+}
+.cta-band-info { max-width: 460px; }
+.cta-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--bronze-highlight);
+  margin: 0 0 18px;
+}
+.cta-eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background: var(--bronze-highlight);
+}
+.cta-band-info h2 {
+  font-size: clamp(1.7rem, 3.2vw, 2.3rem);
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+.cta-band-info p { color: rgba(255,255,255,0.82); }
+
+@media (max-width: 860px) {
+  .cta-band-grid { grid-template-columns: 1fr; }
+  .cta-band-info { max-width: none; text-align: center; }
+  .cta-eyebrow { justify-content: center; }
 }
 
 /* Hero form link */
