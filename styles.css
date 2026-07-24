@@ -436,7 +436,8 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: right center;
 }
 
 @media (max-width: 900px) {
