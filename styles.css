@@ -297,6 +297,13 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 }
 .offer-grid + .offer-grid { margin-top: 36px; }
 .offer-grid-empty { min-height: 220px; }
+.offer-van-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin-top: 40px;
+  box-shadow: var(--shadow);
+}
 .offer-icon {
   display: inline-flex;
   align-items: center;
