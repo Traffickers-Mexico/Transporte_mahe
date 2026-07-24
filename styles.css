@@ -997,3 +997,30 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   .site-header.open .nav-phone { color: var(--ink); }
   .stats-grid { grid-template-columns: 1fr; }
 }
+
+/* Dev credit */
+.dev-credit {
+  background: var(--surface);
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.dev-credit-sep {
+  width: 1px;
+  height: 14px;
+  background: var(--ink);
+  opacity: .35;
+}
+.dev-credit a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 800;
+}
+.dev-credit a:hover { color: var(--bronze-mid); }
