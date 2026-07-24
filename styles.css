@@ -717,10 +717,13 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   color: var(--bronze-dark);
   box-shadow: none;
 }
-.prep-intro { text-align: center; max-width: 680px; margin: 0 auto 44px; }
+.prep-intro { text-align: center; max-width: none; margin: 0 auto 44px; }
 .prep-eyebrow { justify-content: center; }
 .prep-title { color: #fff; font-size: clamp(1.7rem, 3.4vw, 2.4rem); margin: 0 0 14px; }
-.prep-sub { color: rgba(255,255,255,0.78); margin: 0; }
+.prep-sub { color: rgba(255,255,255,0.78); margin: 0; white-space: nowrap; }
+@media (max-width: 720px) {
+  .prep-sub { white-space: normal; }
+}
 .prep-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -859,35 +862,42 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 }
 
 /* Contact */
-.contact-grid {
+.contact-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
-.contact-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  text-decoration: none;
-  color: var(--ink);
-  background: var(--surface-alt);
+.contact-card {
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 22px;
-  transition: box-shadow .15s ease, transform .15s ease;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: transform .15s ease;
 }
-.contact-item:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
-.contact-icon { font-size: 1.4rem; }
-.contact-label {
-  display: block;
-  font-size: .8rem;
-  text-transform: uppercase;
-  letter-spacing: .5px;
+.contact-card:hover { transform: translateY(-3px); }
+.contact-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--surface-alt);
+  color: var(--bronze-mid);
+  margin-bottom: 14px;
+}
+.contact-card-icon svg { width: 20px; height: 20px; }
+.contact-card h3 { font-size: 1.05rem; margin: 0 0 8px; }
+.contact-card p { font-size: .9rem; margin: 0 0 16px; }
+.contact-card a {
+  display: inline-block;
   color: var(--bronze-mid);
   font-weight: 700;
-  margin-bottom: 4px;
+  text-decoration: none;
+  font-size: .92rem;
 }
-.contact-value { display: block; font-weight: 600; }
+.contact-card a:hover { text-decoration: underline; }
 
 /* Footer */
 .site-footer {
