@@ -512,9 +512,12 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 }
 
 /* Why MAHE */
-.why-mahe {
+.why-mahe-inline {
   background: linear-gradient(160deg, var(--bronze-dark) 0%, #1c1006 100%);
   color: #fff;
+  border-radius: var(--radius);
+  padding: 48px clamp(24px, 5vw, 64px);
+  margin: 56px 0;
 }
 .why-mahe-eyebrow {
   text-transform: uppercase;
@@ -524,7 +527,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   color: var(--bronze-highlight);
   margin: 0 0 10px;
 }
-.why-mahe h2 {
+.why-mahe-inline h2 {
   color: #fff;
   font-size: clamp(1.8rem, 3.4vw, 2.4rem);
   margin: 0 0 36px;
