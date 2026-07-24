@@ -258,10 +258,17 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .section { padding: 76px 0; }
 .section.alt { background: var(--surface-alt); }
 #nosotros {
-  background-image: url("assets/img/galeria/fondo_2_blanco_condisenotransparente.webp");
+  background-image:
+    linear-gradient(rgba(245, 237, 228, 0.85), rgba(245, 237, 228, 0.85)),
+    url("assets/img/galeria/fondo_2_blanco_condisenotransparente.webp");
   background-size: cover;
   background-position: center;
 }
+#nosotros .about-text h2 {
+  font-size: clamp(2rem, 3.6vw, 2.6rem);
+  margin-bottom: 18px;
+}
+#nosotros .about-text strong { color: var(--bronze-dark); }
 .section-sub { max-width: 560px; font-size: 1.05rem; margin-top: -8px; margin-bottom: 40px; }
 
 .cards {
