@@ -276,7 +276,17 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .card p { margin: 0; font-size: .95rem; }
 
 /* Offer grid ("Lo que ofrecemos") */
-#servicios h2 { margin-bottom: 40px; }
+#servicios h2 { margin-bottom: 20px; }
+.offer-quote {
+  margin: 0 0 40px;
+  padding: 4px 0 4px 20px;
+  border-left: 4px solid var(--bronze-mid);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink);
+  max-width: 640px;
+}
 .offer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
