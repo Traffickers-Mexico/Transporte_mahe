@@ -704,7 +704,11 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 
 /* CTA band */
 .cta-band {
-  background: var(--gradient-brand-h);
+  background-image:
+    linear-gradient(rgba(46,28,16,0.86), rgba(46,28,16,0.86)),
+    url("assets/img/galeria/formulario_mahe.webp");
+  background-size: cover;
+  background-position: center;
   color: #fff;
   text-align: center;
 }
