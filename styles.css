@@ -379,10 +379,10 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   background-attachment: fixed;
 }
 #beneficios h2 {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto 48px;
   text-align: center;
-  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  font-size: clamp(2.2rem, 4.4vw, 3.1rem);
 }
 
 @media (max-width: 900px) {
