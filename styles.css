@@ -367,6 +367,12 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   display: grid;
   gap: 14px;
 }
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
 .about-list li {
   background: var(--surface);
   border: 1px solid var(--border);
