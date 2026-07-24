@@ -303,14 +303,19 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   max-width: 860px;
 }
 .offer-quote {
-  margin: 0 auto 40px;
+  margin: 0 0 40px;
   padding: 6px 0 6px 26px;
   border-left: 6px solid var(--bronze-mid);
-  font-size: 1.6rem;
+  font-size: 1.85rem;
   font-weight: 700;
   line-height: 1.35;
   color: var(--ink);
-  max-width: 760px;
+  max-width: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .offer-quote { white-space: normal; font-size: 1.4rem; }
 }
 .offer-grid {
   display: grid;
