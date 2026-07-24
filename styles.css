@@ -256,6 +256,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 
 /* Sections */
 .section { padding: 76px 0; }
+#nosotros { padding: 0; }
 .section.alt { background: var(--surface-alt); }
 #nosotros {
   background-image:
@@ -406,12 +407,12 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 /* About */
 .about-flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 48px;
   padding-left: clamp(24px, 6vw, 96px);
 }
-.about-flex .about-text { flex: 1 1 50%; max-width: 560px; }
-.about-flex .about-img-wrap { flex: 1 1 50%; }
+.about-flex .about-text { flex: 1 1 55%; max-width: 560px; padding: 40px 0; }
+.about-flex .about-img-wrap { flex: 0 1 40%; margin-top: 40px; }
 .about-list {
   list-style: none;
   margin: 0;
