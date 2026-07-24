@@ -407,9 +407,9 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 /* About */
 .about-flex {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 48px;
-  padding: 0 clamp(24px, 6vw, 96px);
+  padding: 0 24px;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -435,7 +435,8 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .about-img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 900px) {
