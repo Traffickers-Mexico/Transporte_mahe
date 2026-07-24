@@ -357,56 +357,119 @@
   </section>
 
   <section class="section cta-band" id="cotizar">
-    <div class="container cta-band-grid">
-      <div class="cta-band-info">
-        <p class="cta-eyebrow">Atención para empresas</p>
-        <h2>Cotiza el transporte de personal para tu empresa en Querétaro</h2>
-        <p>Cuéntanos qué necesita tu empresa. Te ayudamos a cotizar rutas de personal, turnos rotativos, traslados a plantas industriales y soluciones de movilidad corporativa con la tecnología MAHE SMH.</p>
+    <div class="container">
+      <div class="prep-intro">
+        <p class="cta-eyebrow prep-eyebrow">Preparación de la solicitud</p>
+        <h2 class="prep-title">Información que nos ayuda a cotizar tu servicio</h2>
+        <p class="prep-sub">Entre más contexto tengamos sobre la operación, más precisa podrá ser la revisión inicial.</p>
       </div>
 
-      <form id="quoteForm" class="quote-form" novalidate>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="q-nombre">Nombre*</label>
-            <input id="q-nombre" name="nombre" type="text" required>
-          </div>
-          <div class="form-field">
-            <label for="q-empresa">Empresa*</label>
-            <input id="q-empresa" name="empresa" type="text" required>
-          </div>
+      <div class="prep-grid">
+        <div class="prep-card">
+          <span class="prep-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20 3.5 18V5L9 7m0 13 6-2m-6 2V7m6 11 5.5 2V7L15 5m0 13V5m0 0-6 2"/></svg>
+          </span>
+          <h3>Ruta y ubicaciones</h3>
+          <p>Dirección de la empresa, colonias de origen, puntos de encuentro, destino y zonas que deben incluirse.</p>
         </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="q-telefono">Teléfono / WhatsApp*</label>
-            <input id="q-telefono" name="telefono" type="tel" required>
-          </div>
-          <div class="form-field">
-            <label for="q-email">Correo*</label>
-            <input id="q-email" name="email" type="email" required>
-          </div>
+        <div class="prep-card">
+          <span class="prep-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </span>
+          <h3>Horario y periodicidad</h3>
+          <p>Hora de entrada y salida, días de operación, frecuencia, turnos rotativos, fines de semana u horas extra.</p>
         </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="q-empleados">N.º de empleados a transportar</label>
-            <input id="q-empleados" name="empleados" type="text" placeholder="Ej. 40 personas">
+        <div class="prep-card">
+          <span class="prep-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <h3>Volumen de pasajeros</h3>
+          <p>Número aproximado de personas por ruta, turno o traslado, para seleccionar la capacidad adecuada.</p>
+        </div>
+        <div class="prep-card">
+          <span class="prep-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm14 0a2 2 0 1 0 4 0 2 2 0 0 0-4 0ZM3 17V9a1 1 0 0 1 1-1h1.5l2-4h9l2 4H21a1 1 0 0 1 1 1v8"/></svg>
+          </span>
+          <h3>Tipo de servicio</h3>
+          <p>Transporte de personal, taxi empresarial, traslado ejecutivo, aeropuerto, evento o carga ligera.</p>
+        </div>
+        <div class="prep-card">
+          <span class="prep-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </span>
+          <h3>Fecha estimada de inicio</h3>
+          <p>Indícanos cuándo necesitas comenzar para revisar disponibilidad y tiempos de preparación.</p>
+        </div>
+        <div class="prep-card">
+          <span class="prep-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><path d="M12 3c2 2 4 2 7 1a9 9 0 0 1-7 17 9 9 0 0 1-7-17c3 1 5 1 7-1Z"/></svg>
+          </span>
+          <h3>Requisitos especiales</h3>
+          <p>Tiempos de espera, facturación, varias paradas, evidencias, monitoreo o necesidades particulares.</p>
+        </div>
+      </div>
+
+      <div class="cta-band-grid">
+        <div class="cta-band-info">
+          <p class="cta-eyebrow">Atención para empresas</p>
+          <h2>Cotiza el transporte de personal para tu empresa en Querétaro</h2>
+          <p>Cuéntanos qué necesita tu empresa. Te ayudamos a cotizar rutas de personal, turnos rotativos, traslados a plantas industriales y soluciones de movilidad corporativa con la tecnología MAHE SMH.</p>
+        </div>
+
+        <form id="quoteForm" class="quote-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="q-nombre">Nombre*</label>
+              <input id="q-nombre" name="nombre" type="text" required>
+            </div>
+            <div class="form-field">
+              <label for="q-empresa">Empresa*</label>
+              <input id="q-empresa" name="empresa" type="text" required>
+            </div>
           </div>
-          <div class="form-field">
-            <label for="q-turnos">Turnos / horarios</label>
-            <input id="q-turnos" name="turnos" type="text" placeholder="Ej. Turno matutino 6am-2pm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="q-telefono">Teléfono / WhatsApp*</label>
+              <input id="q-telefono" name="telefono" type="tel" required>
+            </div>
+            <div class="form-field">
+              <label for="q-email">Correo*</label>
+              <input id="q-email" name="email" type="email" required>
+            </div>
           </div>
-        </div>
-        <div class="form-field form-field-full">
-          <label for="q-ubicaciones">Ubicaciones (origen / destino)</label>
-          <input id="q-ubicaciones" name="ubicaciones" type="text" placeholder="Ej. Zona Industrial Benito Juárez → El Marqués">
-        </div>
-        <div class="form-field form-field-full">
-          <label for="q-mensaje">Mensaje adicional</label>
-          <textarea id="q-mensaje" name="mensaje" rows="3"></textarea>
-        </div>
-        <p class="form-error hidden" id="formError"></p>
-        <p class="form-success hidden" id="formSuccess">¡Gracias! Recibimos tu solicitud, te contactaremos pronto.</p>
-        <button type="submit" class="btn btn-whatsapp" id="formSubmit">Enviar solicitud</button>
-      </form>
+          <div class="form-field form-field-full">
+            <label for="q-ubicaciones">Ruta y ubicaciones</label>
+            <input id="q-ubicaciones" name="ubicaciones" type="text" placeholder="Ej. Zona Industrial Benito Juárez → El Marqués">
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="q-turnos">Horario y periodicidad</label>
+              <input id="q-turnos" name="turnos" type="text" placeholder="Ej. Turno matutino 6am-2pm, lunes a sábado">
+            </div>
+            <div class="form-field">
+              <label for="q-empleados">Volumen de pasajeros</label>
+              <input id="q-empleados" name="empleados" type="text" placeholder="Ej. 40 personas">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="q-tipo-servicio">Tipo de servicio</label>
+              <input id="q-tipo-servicio" name="tipo_servicio" type="text" placeholder="Ej. Transporte de personal">
+            </div>
+            <div class="form-field">
+              <label for="q-fecha">Fecha estimada de inicio</label>
+              <input id="q-fecha" name="fecha" type="date">
+            </div>
+          </div>
+          <div class="form-field form-field-full">
+            <label for="q-mensaje">Requisitos especiales</label>
+            <textarea id="q-mensaje" name="mensaje" rows="3" placeholder="Tiempos de espera, facturación, varias paradas, evidencias, monitoreo, etc."></textarea>
+          </div>
+          <p class="form-error hidden" id="formError"></p>
+          <p class="form-success hidden" id="formSuccess">¡Gracias! Recibimos tu solicitud, te contactaremos pronto.</p>
+          <button type="submit" class="btn btn-whatsapp" id="formSubmit">Enviar solicitud</button>
+        </form>
+      </div>
     </div>
   </section>
 

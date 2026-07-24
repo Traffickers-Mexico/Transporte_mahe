@@ -33,7 +33,7 @@ export async function onRequest(context) {
         });
     }
 
-    const { nombre, empresa, telefono, email, empleados, turnos, ubicaciones, mensaje } = data;
+    const { nombre, empresa, telefono, email, empleados, turnos, ubicaciones, tipo_servicio, fecha, mensaje } = data;
 
     if (!nombre || !empresa || !telefono || !email) {
         return new Response(JSON.stringify({ ok: false, error: 'Faltan campos requeridos' }), {
@@ -53,10 +53,12 @@ export async function onRequest(context) {
                     <tr style="background:#f8f4ef;"><td style="padding:8px;font-weight:bold;color:#555;">Empresa</td><td style="padding:8px;">${empresa}</td></tr>
                     <tr><td style="padding:8px;font-weight:bold;color:#555;">Teléfono</td><td style="padding:8px;">${telefono}</td></tr>
                     <tr style="background:#f8f4ef;"><td style="padding:8px;font-weight:bold;color:#555;">Correo</td><td style="padding:8px;">${email}</td></tr>
-                    <tr><td style="padding:8px;font-weight:bold;color:#555;">N.º de empleados</td><td style="padding:8px;">${empleados || '—'}</td></tr>
-                    <tr style="background:#f8f4ef;"><td style="padding:8px;font-weight:bold;color:#555;">Turnos / horarios</td><td style="padding:8px;">${turnos || '—'}</td></tr>
-                    <tr><td style="padding:8px;font-weight:bold;color:#555;">Ubicaciones</td><td style="padding:8px;">${ubicaciones || '—'}</td></tr>
-                    <tr style="background:#f8f4ef;"><td style="padding:8px;font-weight:bold;color:#555;">Mensaje</td><td style="padding:8px;">${mensaje || '—'}</td></tr>
+                    <tr><td style="padding:8px;font-weight:bold;color:#555;">Ruta y ubicaciones</td><td style="padding:8px;">${ubicaciones || '—'}</td></tr>
+                    <tr style="background:#f8f4ef;"><td style="padding:8px;font-weight:bold;color:#555;">Horario y periodicidad</td><td style="padding:8px;">${turnos || '—'}</td></tr>
+                    <tr><td style="padding:8px;font-weight:bold;color:#555;">Volumen de pasajeros</td><td style="padding:8px;">${empleados || '—'}</td></tr>
+                    <tr style="background:#f8f4ef;"><td style="padding:8px;font-weight:bold;color:#555;">Tipo de servicio</td><td style="padding:8px;">${tipo_servicio || '—'}</td></tr>
+                    <tr><td style="padding:8px;font-weight:bold;color:#555;">Fecha estimada de inicio</td><td style="padding:8px;">${fecha || '—'}</td></tr>
+                    <tr style="background:#f8f4ef;"><td style="padding:8px;font-weight:bold;color:#555;">Requisitos especiales</td><td style="padding:8px;">${mensaje || '—'}</td></tr>
                 </table>
                 <p style="color:#999;font-size:12px;margin-top:20px;">Transporte MAHE — Sistema automático de leads</p>
             </div>

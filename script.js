@@ -36,6 +36,8 @@ if (quoteForm) {
       empleados: quoteForm.empleados.value.trim(),
       turnos: quoteForm.turnos.value.trim(),
       ubicaciones: quoteForm.ubicaciones.value.trim(),
+      tipo_servicio: quoteForm.tipo_servicio.value.trim(),
+      fecha: quoteForm.fecha.value,
       mensaje: quoteForm.mensaje.value.trim(),
     };
 
